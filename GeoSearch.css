@@ -1,0 +1,62 @@
+
+*{
+    background-color: rgb(141, 100, 23);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(228, 248, 247);
+        }
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: repeat(4, 0.1fr)/ repeat(4, 0.5fr);
+    grid-template-areas:
+    "h h h h"
+    "s s s s"
+    "w w l l"
+    "m m m m";     
+   }
+#headings{
+    grid-area: h;
+    width: 100%;
+    text-align: center;
+        }
+#search{
+    grid-area: s;
+    float: center;
+    text-align: center;
+    background-color: rgb(238, 199, 220);
+
+     }
+#weatherDetails{
+    grid-area: w;
+    font-size: 20px;
+    float: center;
+    text-align: center;
+    margin: 50px;
+        }
+#landmark{
+    grid-area: l;
+    text-align: center;
+    }
+#map{
+    grid-area: m;
+    width: 100%;
+    border: 5px solid black;
+    margin: 50px;
+    }
+
+#headings h2{
+    -ms-flex-align: center;
+}
+
+#temperature, #humidity,#windspeed, #longitude, #latitude, #icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid orange;
+}
+#description{
+    margin-left: 20px;
+}

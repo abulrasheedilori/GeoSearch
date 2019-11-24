@@ -1,0 +1,59 @@
+<html>
+        <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <link rel="stylesheet" href="./GeoSearch.css" />
+                <title> Weather </title>
+        </head>
+    <body>
+       <div id="headings">
+            <h1>GeoSearch App</h1>
+            <h4>A web app that shows weather and historical landmark of any place in the world upon request from the client<strong>Happy Surfing</strong></h4>
+        </div>
+        <div id="search" >
+            <input id="citySearch" size= "70%" type="text" name="citySearch" value="search your city" />
+            <input id="submit" type="submit" value="Search" />
+        </div> 
+
+       <div id="weatherDetails">
+            <h2>Weather Details</h2>
+            <div id="icon">
+                    <h4> Icon:</h4>
+                    <p id="Description">Sunny day</p>
+            </div>
+            <div id="temperature">
+                    <h4> Temperature:</h4>
+                    <p id="temp">23</p>
+                    <span>F</span>
+           </div>
+           <div id="humidity">
+                <h4>Humidity:</h4>
+                <p id="hum">45</p>
+           </div>
+           <div id="windspeed">
+                <h4>Windspeed:</h4>
+                <p id="win">45</p>
+           </div>
+           <div id="longitude">
+                <h4>Longitude:</h4>
+                <p id="long">55.45</p>
+           </div>
+           <div id="latitude">
+                <h4>Latitude:</h4>
+                <p id="hisdet">65.34</p>
+            </div>
+       </div>
+       
+        <div id="landmark">
+                <h2>Historical Landmark</h2>
+                <h4 id="timezone">TimeZone</h4>
+        </div>
+        <div id="map">
+            Show map details
+        </div>
+      
+
+    <script src="geoSearch.js"></script>
+    </body>
+</html>
